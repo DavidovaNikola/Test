@@ -1,10 +1,15 @@
-const date = new Date();
-const day = date.getDate();
-const month = date.getMonth(); +1
-const year = date.getFullYear();
+function ovladacSekce() {
+    const obrazekSekce = document.getElementById("profilovy-obrazek");
+    const sekce = document.getElementById("platno-sekce");
 
-const showDate = `${date}/${date}/${month}/${year}`;
-const timeElement = document.getElementById("time");
-timeElement.innerHTML = showDate
-console.log( new Date().toLocaleDateString() );
+    sekce.addEventListener("mouseover", function() {
+        obrazekSekce.style.border = "3px solid pink"; // Apply pink border
+    });
 
+    sekce.addEventListener("mouseleave", function() {
+        obrazekSekce.style.border = "3px solid white"; // Apply white border
+    });
+}
+
+// Call the function to set up the event listeners
+ovladacSekce();

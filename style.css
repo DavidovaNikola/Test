@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(184, 112, 184);
+    background-color: rgb(250, 160, 250);
     max-width: 600px;
     margin: 0 auto;
    
@@ -34,41 +34,13 @@ body {
 .navbar__menu > a {
     margin: 0 10px;
 }
-.mypicture {
+
+#profilovy-obrazek {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     border-radius: 50%;
-    place-items: center;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.myskills {
-    place-items: center;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    
-}
-h1 {
-    font-size: 2.6rem;
-    margin: 0;
-    margin-bottom: 5px;
-}
-
-h2 {
-    text-decoration: underline var(--underline);
-    text-decoration-thickness: 4px;
-    text-underline-offset: 6px;
-    font-size: 2.1rem;
-    margin-bottom: 0;
-}
-
-.mypicture {
-    margin: 20px 0 0 0;
-    text-align: center;
-}
-
-.time {
-    font-size: 2.6rem;
-
+    border: 3px solid pink;
+    padding: 3px;
 }
