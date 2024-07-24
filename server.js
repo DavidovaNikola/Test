@@ -1,14 +1,19 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
+const dbConnect = require("./database/connect"); // Correct the path to your connect.js file
 
-app.get("/", (req,res) => {
-  res.send("Jsi na hlavni strance");
+dbConnect(); // Call the exported connect method
+
+app.get("/", (req, res) => {
+    res.send("Jsi na hlavni strance");
 });
 
-app.listen(PORT, (err) => {
-    console.log(`Servcer bezi na ${PORT}!`)
+app.listen(PORT, () => {
+    console.log(`Server bezi na ${PORT}!`);
 });
+
+
 
 /*function ovladacSekce() {
     const obrazekSekce = document.getElementById("profilovy-obrazek");
