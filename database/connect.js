@@ -8,6 +8,7 @@ class dbConnect {
             await mongoose.connect(URL, {
                 useNewUrlParser: true, // Add this line
                 useUnifiedTopology: true, // Add this line
+                
             });
             console.log("Successfully connected to the database");
         } catch (err) {

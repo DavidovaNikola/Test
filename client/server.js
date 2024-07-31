@@ -6,13 +6,13 @@ const dbConnect = require("./database/connect"); // Correct the path to your con
 dbConnect(); // Call the exported connect method
 
 app.get("/", (req, res) => {
-    res.send("Jsi na hlavni strance");
+    res.send("Toto je jina stranka ");
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server bezi na ${PORT}!`);
 });
-
 
 
 /*function ovladacSekce() {

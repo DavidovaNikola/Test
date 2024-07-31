@@ -1,12 +1,16 @@
+import React from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import './App.css';
+import Main from '../pages/Main';
+import AddMaterials from '../pages/AddMaterials/';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-    <p> Ahoj svete </p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/add-material" element={<AddMaterials />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
-
-export default App;
+};

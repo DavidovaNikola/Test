@@ -1,6 +1,5 @@
 const express = require("express");
-const router = express.Router(); // Create an instance of the router
-
+const router = express.Router();
 const material = require("../../models/material");
 
 router.get("/get-materials", async (req, res) => {
@@ -19,7 +18,6 @@ router.get("/get-materials", async (req, res) => {
 });
 
 module.exports = router;
-    
 
     //const getMaterial = express.Router();
     /*try {

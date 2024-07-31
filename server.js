@@ -23,7 +23,7 @@ app.use("/",getMaterial); //tady to davame jenom s lomitkem at je to lehci a pre
 app.use(express.json({exptended:false})); //nebo express treba text
 app.use("/", saveMaterial);
 app.get("/", (req, res) => {
-    res.send("Jsi na hlavni strance");
+    res.send("Hlavni stranka - ");
 });
 
 
